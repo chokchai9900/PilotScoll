@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PilotScoll.MainPage"
+             xmlns:local="clr-namespace:PilotScoll.CustomsView">
+
+    <ContentPage.Content>
+        <StackLayout>
+            <local:CustomScrollView  Scrolled="ScrollView_Scrolled" x:Name="ScrollWebView" Margin="0,0,0,-55">
+                <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                    <WebView x:Name="Button_Clicked" Source="https://htmlcolorcodes.com/assets/images/colors/neon-green-color-solid-background-1920x1080.png" HeightRequest="50"/>
+                    <WebView x:Name="hybridWebView" 
+                         Source="https://developer.apple.com/forums/thread/703896" 
+                         VerticalOptions="FillAndExpand" 
+                         HorizontalOptions="FillAndExpand"
+                         />
+                </StackLayout>
+            </local:CustomScrollView>
+            <StackLayout>
+                <Button HeightRequest="50" HorizontalOptions="FillAndExpand" Text="Click" BackgroundColor="Red"></Button>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
